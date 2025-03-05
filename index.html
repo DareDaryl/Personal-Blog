@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
+</style>
+<script>
+// Function to toggle the visibility of the content
+function toggleContent(postId) {
+  var content = document.getElementById(postId);
+  var button = document.getElementById('readMoreButton_' + postId);
+  
+  if (content.style.display === 'none') {
+    content.style.display = 'block';
+    button.innerHTML = '<b>READ LESS «</b>';
+  } else {
+    content.style.display = 'none';
+    button.innerHTML = '<b>READ MORE »</b>';
+  }
+}
+</script>
+</head>
+<body class="w3-light-grey">
+
+<!-- w3-content defines a container for fixed size centered content, 
+and is wrapped around the whole page content, except for the footer in this example -->
+<div class="w3-content" style="max-width:1400px">
+
+<!-- Header -->
+<header class="w3-container w3-center w3-padding-32"> 
+  <h1><b>MY BLOG</b></h1>
+  <p>Welcome to the blog of <span class="w3-tag">DareDaryl</span></p>
+</header>
+
+<!-- Grid -->
+<div class="w3-row">
+
+<!-- Blog entries -->
+<div class="w3-col l8 s12">
+  <!-- Blog entry -->
+  <div class="w3-card-4 w3-margin w3-white">
+    <img src="./assets/image.png" alt="Nature" style="width:100%">
+    <div class="w3-container">
+      <h3><b>The Fires</b></h3>
+      <h5>A first hand account of the SD Cedar Fire, <span class="w3-opacity">March 3, 2025</span></h5>
+    </div>
+
+    <div class="w3-container">
+      <p>
+        "This is biblical"
+        The thought ran through my head as I looked at the sky. I'm not sure what I had thought being in a massive fire would look like, but it wasn't this. Every inch of the sky was covered in smoke and ash. The normal white clouds and blue sky were completely obscured by the firestorm. Blooms of red light appeared here and there (probably from the sun trying to get through) giving the impression that the sky ITSELF was on fire. It boiled and rolled. It was death from above. 
+      </p>
+      
+      <!-- Hidden content to show on "READ MORE" click -->
+      <div id="post1" style="display:none;">
+        <p>  It boiled and rolled. It was death from above. 
+        
+        My mind couldn't help but wander and try to find an apt comparison. The scene in Indepence Day where the aliens first arrive; the one where their ships created a fire cloud when entering our atmosphere came to mind. It looked exactly like that. Yeah I know...the world is 'ending', people are shouting and screaming. Evacuations have started, Fire trucks are blaring, and I'm over here comparing the sky to a Sci-Fi movie. 
+        I put the report into the background of my mind while I tried to remember all the disaster preparedness drills I had growing up. One thing I knew from personal experience, was that one of the first things to go is water. Sink water becomes toxic and undrinkable, but that hasn't happened to us yet. 
+          I went to work grabbing every single pot, cup, mug, glass and bowl we had and filled them with clean water. I stored them anywhere I could. They were on the tables, the counters and the stoves. </p>
+          Next, I ran into the hallway cabinet to grab every candle I owned. 
+          <p>Thankfully, this was during an emo rock phase of mine so I had 20 or so large candles and dozens of tea lights. Who ever said moody blues couldn't save a life? I knew that the next thing to go would be power, so I placed two candles in every room and the extras in the main room.
+          I started putting together a bag of things to grab in a hurry and was sorting out the food situation when there was a bang on the door. 
+          I crossed the room and opened it to a firefighter standing right outside. "This area has now been listed for mandatory evacuation. You guys need to leave. The freeway is closed going Westbound so you'll have to go East on the 8 until you hit the Descanso evacuation point (about 10-20 miles up the mountain).  I thanked the firefighter and assured him that we would be leaving as quickly as we could. I ran to the car and took stuff out to make space for essentials. It was then that I noticed my fuel tank was low.  I cursed under my breath and hopped in the car to rush to a gas station. There was one only two blocks away but it took well over 30 minutes to get there. Every four way intersection was jammed from people who were panicking and didn't want to stop at the red light. The result was a giant mess of car horns and frantic talking. As I stood on the corner, I saw one car gun it and hit another. 
+      
+          <p>By the time I got to the gas station, it was empty. That should have been my first sign. There was a notice on every pump as well as the store declaring the gas station was shut down due to the fires. It made perfect sense. If a fire is approaching, the last thing you want is a source of fuel to feed it. They probably shut all their underground tanks and turned off the pumps hours before. It was so logical it made me laugh.  Why didn't movies ever show stuff like this? 
+          With my car on empty, I drove back to the apartments and decided I needed to come up with a Plan B. I didn't have enough gas to get us to the evacuation point. 
+          An hour later I had everything packed and ready. My little brother was near and I was doing my best to calm him down while I had to triage which pets would be able to fit in my small Geo Storm. I hated the idea that we couldn't take them all but the fire was getting closer and we were running out of time. I walked outside every few minutes to look at the sky and horizon, checking for the tell tale flickers of the fire itself when I suddenly noticed it was snowing. </p>
+          
+          I looked down and saw what seemed to be white and grey snowflakes covering my shoulders, hands and black shirt. It was ash. Heavy ash that would rain down and not stop for three days straight. 
+          My car had a light dusting on it and the ash was pooling up on the ground at the edges of the sidewalk and bushes. "Another thing they don't show in movies" I thought as I turned back to go inside. I was alarmed. The air quality hadn't been great from the moment the fires started, but this was different. You couldn't breathe in without inhaling large pieces of ash that tasted immediately like cigarettes, choking you. 
+          "Fuck" 
+          I ran around the unit closing every window I could. We could preserve the air inside, even if the outside was bad. Once locked, I gathered every small towel I could find and started lining the windows and door cracks. 
+          Surprisingly, my mind wasn't racing. Go figure. 
+          On a regular day, my anxiety causes me fight or flight responses and during an actual emergency, I feel as calm as if I had just done yoga. 
+          
+          "What do we do Dayo?" he asked, and I told him not to worry, that we were safe and that we had a plan. The ash cloud outside had completely obscured the sun so there was no light coming through the windows, despite it being only 1pm in the middle of the Summer. I sat down to figure out what to do next when I heard a sudden "bang", followed by the power being shut off in the most dramatic way, leaving us in darkness.
+          
+          To be continued ....</p>
+      </div>
+      
+      <div class="w3-row">
+        <div class="w3-col m8 s12">
+          <!-- "READ MORE" button -->
+          <p><button id="readMoreButton_post1" class="w3-button w3-padding-large w3-white w3-border" onclick="toggleContent('post1')"><b>READ MORE »</b></button></p>
+        </div>
+        <div class="w3-col m4 w3-hide-small">
+          <p><span class="w3-padding-large w3-right"><b>Comments  </b> <span class="w3-tag">0</span></span></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <hr>
+
+  <!-- Blog entry -->
+  <div class="w3-card-4 w3-margin w3-white">
+  <img src="/w3images/bridge.jpg" alt="Norway" style="width:100%">
+    <div class="w3-container">
+      <h3><b>Book genres and socio-economics</b></h3>
+      <h5>A look at the connection between which genres appeal to different class structures <span class="w3-opacity">March 5, 2025</span></h5>
+    </div>
+
+    <div class="w3-container">
+      <p>Mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus at. Phasellus sed ultricies mi non congue ullam corper. Praesent tincidunt sed
+        tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+
+      <!-- Hidden content to show on "READ MORE" click -->
+      <div id="post2" style="display:none;">
+        <p>This is additional content that will be shown when you click "READ MORE" for the second post. You can add as much content as you want here.</p>
+      </div>
+      
+      <div class="w3-row">
+        <div class="w3-col m8 s12">
+          <!-- "READ MORE" button -->
+          <p><button id="readMoreButton_post2" class="w3-button w3-padding-large w3-white w3-border" onclick="toggleContent('post2')"><b>READ MORE »</b></button></p>
+        </div>
+        <div class="w3-col m4 w3-hide-small">
+          <p><span class="w3-padding-large w3-right"><b>Comments  </b> <span class="w3-badge">2</span></span></p>
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- END BLOG ENTRIES -->
+</div>
+
+<!-- Introduction menu -->
+<div class="w3-col l4">
+  <!-- About Card -->
+  <div class="w3-card w3-margin w3-margin-top">
+  <img src="/w3images/avatar_g.jpg" style="width:100%">
+    <div class="w3-container w3-white">
+      <h4><b>Daryl Shifflett</b></h4>
+      <p>Just me, myself and I, exploring the universe of uknownment. I have a heart of love and a interest of lorem ipsum and mauris neque quam blog. I want to share my world with you.</p>
+    </div>
+  </div><hr>
+  
+  <!-- Posts -->
+  <div class="w3-card w3-margin">
+    <div class="w3-container w3-padding">
+      <h4>Popular Posts</h4>
+    </div>
+    <ul class="w3-ul w3-hoverable w3-white">
+      <li class="w3-padding-16">
+        <img src="/w3images/workshop.jpg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
+        <span class="w3-large">Lorem</span><br>
+        <span>Sed mattis nunc</span>
+      </li>
+      <li class="w3-padding-16">
+        <img src="/w3images/gondol.jpg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
+        <span class="w3-large">Ipsum</span><br>
+        <span>Praes tinci sed</span>
+      </li> 
+      <li class="w3-padding-16">
+        <img src="/w3images/skies.jpg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
+        <span class="w3-large">Dorum</span><br>
+        <span>Ultricies congue</span>
+      </li>   
+      <li class="w3-padding-16 w3-hide-medium w3-hide-small">
+        <img src="/w3images/rock.jpg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
+        <span class="w3-large">Mingsum</span><br>
+        <span>Lorem ipsum dipsum</span>
+      </li>  
+    </ul>
+  </div>
+  <hr> 
+  
+  <!-- Labels / tags -->
+  <div class="w3-card w3-margin">
+    <div class="w3-container w3-padding">
+      <h4>Tags</h4>
+    </div>
+    <div class="w3-container w3-white">
+    <p><span class="w3-tag w3-black w3-margin-bottom">Travel</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">New York</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">London</span>
+      <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">IKEA</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">NORWAY</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">DIY</span>
+      <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Ideas</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Baby</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Family</span>
+      <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">News</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Clothing</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Shopping</span>
+      <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Sports</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Games</span>
+    </p>
+    </div>
+  </div>
+  
+<!-- END Introduction Menu -->
+</div>
+
+<!-- END GRID -->
+</div><br>
+
+<!-- END w3-content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-container w3-dark-grey w3-padding-32 w3-margin-top">
+  <button class="w3-button w3-black w3-disabled w3-padding-large w3-margin-bottom">Previous</button>
+  <button class="w3-button w3-black w3-padding-large w3-margin-bottom">Next »</button>
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+</footer>
+
+</body>
+</html>
+
