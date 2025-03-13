@@ -83,7 +83,30 @@ body {
   margin-bottom: 10px;         /* Adds space below the title */
 }
 
+ /* Customizing the navbar */
+ .w3-navbar {
+  background-color: #333; /* Dark background for navbar */
+  color: white; /* White text color */
+  border-radius: 5px; /* Rounded corners for the navbar */
+}
 
+.w3-navbar a {
+  color: white;
+  font-size: 18px;
+}
+
+.w3-navbar a:hover {
+  background-color: #007bff; /* Light blue hover effect */
+  color: white;
+}
+
+.w3-navbar .w3-right {
+  margin-left: auto; /* Aligns the right items */
+}
+
+.w3-navbar .w3-left {
+  margin-right: auto; /* Aligns the left items */
+}
 
 
         /* Main content area 
