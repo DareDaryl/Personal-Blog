@@ -24,6 +24,38 @@ function toggleContent(postId) {
     button.innerHTML = '<b>READ MORE »</b>';
   }
 }
+//BELOW WAS ADDED TO CREATE A WAY TO SUBMIT NEW BLOG ENTRIES//
+document.getElementById('blogPostForm').addEventListener('submit', function(e) {
+  e.preventDefault(); // Prevent the form from submitting and reloading the page
+  
+  // Get form values
+  const title = document.getElementById('title').value;
+  const content = document.getElementById('content').value;
+  const image = document.getElementById('image').value;
+  
+  // Create a new blog post element
+  const blogPost = document.createElement('div');
+  blogPost.classList.add('w3-card-4', 'w3-margin', 'w3-white');
+  
+  blogPost.innerHTML = `
+    <img src="${image}" alt="Blog Post Image" style="width:100%; height:auto; max-height:300px;">
+    <div class="w3-container">
+      <h3><b>${title}</b></h3>
+      <h5>Blog post description <span class="w3-opacity">${new Date().toLocaleDateString()}</span></h5>
+    </div>
+    <div class="w3-container">
+      <p>${content}</p>
+      <button class="w3-button w3-padding-large w3-white w3-border"><b>READ MORE »</b></button>
+    </div>
+  `;
+  
+  // Append the new blog post to the container
+  document.getElementById('blogPostsContainer').appendChild(blogPost);
+  
+  // Optionally clear the form after adding the post
+  document.getElementById('blogPostForm').reset();
+});
+//END OF NEW JAVA ENTRIES//
 </script>
 </head>
 
@@ -194,6 +226,24 @@ and is wrapped around the whole page content, except for the footer in this exam
       <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Sports</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Games</span>
     </p>
     </div>
+  </div>
+
+
+
+  
+  <div>
+    <h2>Add a New Blog Post</h2>
+    <form id="blogPostForm">
+      <input type="text" id="title" placeholder="Title" required><br><br>
+      <textarea id="content" placeholder="Enter blog content here..." required></textarea><br><br>
+      <input type="text" id="image" placeholder="Image URL" required><br><br>
+      <button type="submit">Add Post</button>
+    </form>
+  </div>
+  
+  <!-- Container where new blog posts will be added -->
+  <div id="blogPostsContainer">
+    <!-- Blog posts will be appended here -->
   </div>
   
 <!-- END Introduction Menu -->
