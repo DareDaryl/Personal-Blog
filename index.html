@@ -72,6 +72,20 @@ and is wrapped around the whole page content, except for the footer in this exam
   <p>Welcome to the blog of <span class="w3-tag">DareDaryl</span></p>
 </header>
 
+<!-- Navigation Bar (Outside the .w3-content container) -->
+<nav class="w3-bar w3-black w3-wide w3-padding w3-top">
+  <a href="#" class="w3-bar-item w3-button w3-hover-opacity">Home</a>
+  <a href="#blogPostsContainer" class="w3-bar-item w3-button w3-hover-opacity">Blog Posts</a>
+  <a href="#about" class="w3-bar-item w3-button w3-hover-opacity">About</a>
+  <a href="#contact" class="w3-bar-item w3-button w3-hover-opacity">Contact</a>
+  <a href="#tags" class="w3-bar-item w3-button w3-hover-opacity">Tags</a>
+</nav>
+
+<!-- w3-content -->
+<div class="w3-content" style="max-width:1400px">
+  <!-- Rest of your content goes here -->
+</div>
+
 <!-- Grid -->
 <div class="w3-row">
 
@@ -176,13 +190,16 @@ and is wrapped around the whole page content, except for the footer in this exam
 <div class="w3-col l4">
   <!-- About Card -->
   <div class="w3-card w3-margin w3-margin-top about-card">
+      <section id="about" class="w3-container w3-padding-32">
+
   <img src="./assets/d-green.jpg" style="width: 100%">
     <div class="w3-container w3-white">
       <h4><b>Daryl Shifflett</b></h4>
       <p>Just me, myself and I, exploring the universe of the unknown and wanting to share my world with you. "One more dance along the razor's edge finished. Almost dead yesterday, maybe dead tomorrow, but alive, gloriously alive, today."</p>
     </div>
   </div><hr>
-  
+  <section id="about" class="w3-container w3-padding-32">
+
   <!-- Posts -->
   <div class="w3-card w3-margin">
     <div class="w3-container w3-padding">
@@ -216,6 +233,8 @@ and is wrapped around the whole page content, except for the footer in this exam
   <!-- Labels / tags -->
   <div class="w3-card w3-margin">
     <div class="w3-container w3-padding">
+      <section id="tags" class="w3-container w3-padding-32">
+
       <h4>Tags</h4>
     </div>
     <div class="w3-container w3-white">
@@ -245,7 +264,61 @@ and is wrapped around the whole page content, except for the footer in this exam
   <div id="blogPostsContainer">
     <!-- Blog posts will be appended here -->
   </div>
+  <script>
+    // Get the form and blog posts container elements
+    const form = document.getElementById('blogPostForm');
+    const blogPostsContainer = document.getElementById('blogPostsContainer');
   
+    // Handle form submission
+    form.addEventListener('submit', function(event) {
+      event.preventDefault(); // Prevent the form from reloading the page
+  
+      // Get the values from the form fields
+      const title = document.getElementById('title').value;
+      const content = document.getElementById('content').value;
+      const image = document.getElementById('image').value;
+  
+      // Create a new blog post element
+      const blogPost = document.createElement('div');
+      blogPost.classList.add('blog-post'); // Optionally add a class for styling
+  
+      // Create the title, content, and image elements
+      const blogTitle = document.createElement('h3');
+      blogTitle.textContent = title;
+      
+      const blogContent = document.createElement('p');
+      blogContent.textContent = content;
+  
+      const blogImage = document.createElement('img');
+      blogImage.src = image;
+      blogImage.alt = 'Blog Post Image';
+      blogImage.style.maxWidth = '100%'; // Optionally style the image
+  
+      // Create a Delete button
+      const deleteButton = document.createElement('button');
+      deleteButton.textContent = 'Delete Post';
+      deleteButton.style.marginTop = '10px'; // Optional styling
+      deleteButton.style.backgroundColor = 'red';
+      deleteButton.style.color = 'white';
+  
+      // Add an event listener to the Delete button
+      deleteButton.addEventListener('click', function() {
+        blogPostsContainer.removeChild(blogPost);
+      });
+  
+      // Append the elements to the new blog post
+      blogPost.appendChild(blogTitle);
+      blogPost.appendChild(blogContent);
+      blogPost.appendChild(blogImage);
+      blogPost.appendChild(deleteButton);
+  
+      // Add the new blog post to the container
+      blogPostsContainer.appendChild(blogPost);
+  
+      // Clear the form fields
+      form.reset();
+    });
+  </script>
 <!-- END Introduction Menu -->
 </div>
 
