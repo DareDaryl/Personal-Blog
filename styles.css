@@ -6,7 +6,13 @@
     margin: 20px 0;       /* Adds margin outside the container for spacing */
 
 }
-
+nav.w3-bar {
+  width: 100%; /* Ensure the navbar spans the full width */
+  position: fixed; /* Fix navbar at the top */
+  top: 0;
+  left: 0;
+  z-index: 1000; /* Ensure it's always on top of other content */
+}
 .w3-container {
     width: 100%;
     padding: 16px; /* Optional padding to match card spacing */
@@ -15,7 +21,11 @@ body {
     position: relative;
     background-color: #f0f0f0;  /* Optional fallback color */
   }
-  
+  body, html {
+  margin: 0;  /* Remove any margin from the body and html */
+  padding: 0; /* Remove any padding from the body and html */
+  width: 100%; /* Ensure body spans full width */
+}
   /* Create a pseudo-element for the background image */
   body::before {
     content: "";
@@ -106,6 +116,11 @@ body {
 
 .w3-navbar .w3-left {
   margin-right: auto; /* Aligns the left items */
+}
+/* Make the "Popular Posts" and "Tags" headers bigger and bolder */
+.w3-container h4 {
+  font-size: 1.5em; /* Increase the size of the text */
+  font-weight: bold; /* Make the text bold */
 }
 
 
