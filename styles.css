@@ -179,7 +179,77 @@ button {
   font-size: 16px; /* Increases font size for better readability */
   cursor: pointer; /* Adds a pointer cursor when hovering over the button */
 }
+.w3-modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.4);
+  /* Using flexbox to center the modal */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
+.w3-modal-content {
+  background-color: #fefefe;
+  margin: 15px;
+  padding: 0;
+  border: 1px solid #888;
+  width: 80%; /* Limit the width of the modal */
+  max-width: 700px; /* Maximum width for the modal */
+  /* Ensuring the modal content doesn't shift when it pops up */
+  border-radius: 8px;
+}
+
+.w3-button {
+  background-color: #080808;
+  color: white;
+  padding: 5px 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 2px;
+  font-size: 15px; /* Smaller text size */
+}
+
+.w3-button:hover {
+  background-color: #f44336;
+}
+
+/* Image styling */
+.modal-image {
+  width: 100%;
+  height: auto;
+  max-height: 300px; /* Limit image height */
+  object-fit: cover; /* Ensures the image covers the space, cropping if necessary */
+}
+
+/* Add padding inside the container to avoid squishing */
+.blog-container {
+  padding: 20px;
+}
+
+/* Hover effect for list items */
+.hover-button {
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.hover-button:hover {
+  background-color: #f0f0f0;  /* Change background color on hover */
+  transform: scale(1.05);      /* Slightly scale up the button */
+}
+
+.hover-button:hover img {
+  transform: scale(1.1);        /* Slightly enlarge the image on hover */
+}
+
+.hover-button:hover span {
+  color: #ff4c4c;               /* Change text color on hover */
+}
 
         /* Main content area 
        /* Flexbox for rows 
